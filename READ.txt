@@ -1,0 +1,28 @@
+DİSCORD // https://discord.gg/WHRdmzwgjw
+
+ReverseBeam Team 
+============================================
+
+Run HelperTool.exe as Administrator.
+Run DefenderControl.exe as Administrator then click Disable Windows Defender.
+Then run BlastCheats.exe as administrator and click REGISTER if you haven't registered before.
+Click on the user name and password, and enter the key given to you to the desired place in the register section.
+Write completely, so that your registration will be completed. Then log in with the information you registered.
+
+In-Game Settings;
+Take the Game to Windowed Full Screen.
+Make the Enemy Highlight Color Purple.
+Make sure your in-game sensitivity is the same as in the program, or it won't work properly.
+
+Legit Settings we recommend;
+https://imgyukle.com/i/Rj1kHA
+https://imgyukle.com/i/Rj1oK1
+
+`If you are getting an error, try the following in order.
+1 -Secure boot off
+2 - Turn on hyper-v (home does not support hyper-v)
+3 -Turn off virtualization
+4- Clean the hosts file in your windows/system32/drivers/etc folder on your C Disk.
+5- If you are getting a buga error; Make sure Blasta1m is not open from task manager and enter your C disk and delete the .dll file named buga. Turn Blasta1m back on.
+(Windows 10 Pro All Versions Tested)
+(Windows 11 NOT TESTED)
