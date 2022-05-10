@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B762554-F376-48EB-AAB0-A78B0593F3BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BlastCheats</RootNamespace>
+    <AssemblyName>BlastCheats</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>BlastCheats.ico</ApplicationIcon>
+    <StartupObject>SkyCheats.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiDebugging" />
+    <Reference Include="MetroFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="000A3D2C.cs" />
+    <Compile Include="082B7F7D.cs" />
+    <Compile Include="14B825FE.cs" />
+    <Compile Include="1EAB4BE0.cs" />
+    <Compile Include="2803348B.cs" />
+    <Compile Include="37386292.cs" />
+    <Compile Include="474A1F71.cs" />
+    <Compile Include="4AB0072B.cs" />
+    <Compile Include="4EFE6476.cs" />
+    <Compile Include="54904C9C.cs" />
+    <Compile Include="676900C5.cs" />
+    <Compile Include="6A10248A.cs" />
+    <Compile Include="6AAD6420.cs" />
+    <Compile Include="6B147225.cs" />
+    <Compile Include="7F3A42CD.cs" />
+    <Compile Include="BlastCheats_ProcessedByFody.cs" />
+    <Compile Include="CommonAcl.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="Loader\Security\AntiDebug\Anti_Dbg.cs" />
+    <Compile Include="Loader\Security\AntiDLLInject\AntiDLLInject.cs" />
+    <Compile Include="Loader\Security\AntiDump\AntiDumpHandler.cs" />
+    <Compile Include="Loader\Security\AntiProcess\AntiProcessHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sandboxie.cs" />
+    <Compile Include="SkyCheats\CDD.cs" />
+    <Compile Include="SkyCheats\config.cs" />
+    <Compile Include="SkyCheats\DebuggerAcl.cs" />
+    <Compile Include="SkyCheats\DnSpy.cs" />
+    <Compile Include="SkyCheats\Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkyCheats\Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkyCheats\LUserControls\api.cs" />
+    <Compile Include="SkyCheats\LUserControls\encryption.cs" />
+    <Compile Include="SkyCheats\LUserControls\json_wrapper.cs" />
+    <Compile Include="SkyCheats\LUserControls\LUserControl1.cs" />
+    <Compile Include="SkyCheats\LUserControls\LUserControl2.cs" />
+    <Compile Include="SkyCheats\LUserControls\LUserControl3.cs" />
+    <Compile Include="SkyCheats\LUserControls\LUserControl4.cs" />
+    <Compile Include="SkyCheats\Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkyCheats\Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkyCheats\Program.cs" />
+    <Compile Include="SkyCheats\Properties\Resources.cs" />
+    <Compile Include="SkyCheats\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SkyCheats\TG_Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkyCheats\TG_Main_Form.Designer.cs">
+      <DependentUpon>TG_Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkyCheats\UserControl1.cs" />
+    <Compile Include="SkyCheats\UserControls\UserControl10.cs" />
+    <Compile Include="SkyCheats\UserControls\UserControl2.cs" />
+    <Compile Include="SkyCheats\UserControls\UserControl3.cs" />
+    <Compile Include="SkyCheats\UserControls\UserControl4.cs" />
+    <Compile Include="SkyCheats\UserControls\UserControl5.cs" />
+    <Compile Include="SkyCheats\UserControls\UserControl6.cs" />
+    <Compile Include="SkyCheats\UserControls\UserControl7.cs" />
+    <Compile Include="SkyCheats\UserControls\UserControl8.cs" />
+    <Compile Include="SkyCheats\UserControls\UserControl9.cs" />
+    <Compile Include="SkyCheats\UserControls\UserControlTG.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BlastCheats.exe.licenses" />
+    <EmbeddedResource Include="Costura\antidebugging\dll.compressed" />
+    <EmbeddedResource Include="Costura\costura\dll.compressed" />
+    <EmbeddedResource Include="Costura\costura\pdb.compressed" />
+    <EmbeddedResource Include="Costura\metadata" />
+    <EmbeddedResource Include="Costura\metroframework\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\codedom\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\diagnosticsource\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\principal\windows\dll.compressed" />
+    <EmbeddedResource Include="SkyCheats\Login_Form.resources" />
+    <EmbeddedResource Include="SkyCheats\LUserControls\LUserControl1.resources" />
+    <EmbeddedResource Include="SkyCheats\LUserControls\LUserControl2.resources" />
+    <EmbeddedResource Include="SkyCheats\LUserControls\LUserControl3.resources" />
+    <EmbeddedResource Include="SkyCheats\LUserControls\LUserControl4.resources" />
+    <EmbeddedResource Include="SkyCheats\Main_Form.resources" />
+    <EmbeddedResource Include="SkyCheats\Properties\Resources.resources" />
+    <EmbeddedResource Include="SkyCheats\TG_Main_Form.resources" />
+    <EmbeddedResource Include="SkyCheats\UserControl1.resources" />
+    <EmbeddedResource Include="SkyCheats\UserControls\UserControl10.resources" />
+    <EmbeddedResource Include="SkyCheats\UserControls\UserControl2.resources" />
+    <EmbeddedResource Include="SkyCheats\UserControls\UserControl3.resources" />
+    <EmbeddedResource Include="SkyCheats\UserControls\UserControl4.resources" />
+    <EmbeddedResource Include="SkyCheats\UserControls\UserControl5.resources" />
+    <EmbeddedResource Include="SkyCheats\UserControls\UserControl6.resources" />
+    <EmbeddedResource Include="SkyCheats\UserControls\UserControl7.resources" />
+    <EmbeddedResource Include="SkyCheats\UserControls\UserControl8.resources" />
+    <EmbeddedResource Include="SkyCheats\UserControls\UserControl9.resources" />
+    <EmbeddedResource Include="SkyCheats\UserControls\UserControlTG.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="SkyCheats\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
